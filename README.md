@@ -1,16 +1,26 @@
 ## This Project Create Setup with Monorepo using NPM and React-Leaflet for MAP
-# Author : Oktavianus
+## Author : Oktavianus
 
 # Project Structure
-live_tracking_apps/
-├── apps/
-│   ├── frontend/      # React JS
-│   └── backend/       # NestJS app
-├── packages/
-│   └── shared/        # Shared types and utils
-├── tsconfig.base.json
-├── turbo.json
 
+Frontend: React + Leaflet (in apps/frontend)
+
+Backend: NestJS + WebSocket (in apps/backend)
+
+Shared: Reusable TypeScript types and utilities (in packages/shared)
+
+Build Tool: Turborepo
+
+# Features
+Real-time GPS tracking on map
+
+WebSocket-based live updates
+
+Shared code and types between backend & frontend
+
+Support for 20 concurrent tracker simulations
+
+"Last seen" status on map markers
 
 ## Backend Using Nestjs and socket io
 using port 3001
